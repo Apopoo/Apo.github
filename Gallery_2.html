@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Neon flowers</title>
+        <meta type="description" content="Voici mon portfolio" />
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="boxed">
+                <div class="flex aligncenter space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="/" class="header-logo">
+                        <img src="img/website/Apopo_logo.png">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#projet">Projet</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="./index.html">Retour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="accueil" class="slider">
+                <img src="img/Gallery_2/fleur_jaune.jpg" class="slider-background">
+                <div class="slider-content">
+                    <h1>Neon flowers</h1>
+                    <p>Animation 2D</p>
+                </div>
+            </div>
+
+        <div id="projet" class="section">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
+                        <h2>Projet</h2> 
+                    </div>
+                    <div class="w60 wm100">
+                        <p>Neon flowers est un projet de vidéo Mapping commencé en fin 2024. Des fleurs aux couleurs néons et lumineuses dansent et changent leurs couleurs en fonction de la musique, créant des chorégraphies hautes en couleurs, vidéo projeté sur les murs intérieurs d'une pièce pour un effet discothèque, soit aux murs extérieurs d'un bâtiment. Ce projet ambitieux est en cours de réalisation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="galerie" class="section dark">
+            <div class="boxed text-center"> 
+                <h2>Galerie</h2>
+                <div class="flex wrap gap20 space-between">
+                    <div class="w32 wm47 gallery1">
+                            <a href="img/Gallery_2/fleur_jaune.jpg"><img src="img/Gallery_2/fleur_jaune.jpg"></a>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                            <a href="img/Gallery_2/fleur_bleue.jpg"><img src="img/Gallery_2/fleur_bleue.jpg"></a>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                            <a href="img/Gallery_2/fleur_verte.jpg"><img src="img/Gallery_2/fleur_verte.jpg"></a>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                        <a href="img/Gallery_2/fleur-prototype.jpg"><img src="img/Gallery_2/fleur-prototype.jpg"></a>
+                </div>
+                <div class="w32 wm47 gallery1">
+                    <a href="img/Gallery_2/fleur_rouge.jpg"><img src="img/Gallery_2/fleur_rouge.jpg"></a>
+            </div>
+                <div class="w32 wm47 gallery1">
+                    <a href="img/Gallery_2/fleurs_multiples.jpg"><img src="img/Gallery_2/fleurs_multiples.jpg"></a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/app.js"></script>
+</html>
