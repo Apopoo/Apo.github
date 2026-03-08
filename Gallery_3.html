@@ -14,14 +14,14 @@
                     <button onclick="openMenu()" class="header-menu-mobile">
                         <span class="material-icons">menu</span>
                     </button>
-                    <a href="img/website/Apopo_logo.png" class="header-logo">
+                    <a href="/" class="header-logo">
                         <img src="img/website/Apopo_logo.png">
                     </a>
                     <ul class="header-menu">
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#projet">Projet</a></li>
                         <li><a href="#galerie">Galerie</a></li>
-                        <li><a href="./index.html">Retour</a></li>
+                        <li><a href="./index.html#realisations">Retour</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,27 +52,36 @@
                 <h2>Galerie</h2>
                 <div class="flex wrap gap20 space-between">
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery_3/Eternal_Night.jpg"><img src="img/Gallery_3/Eternal_Night.jpg"></a>
+                        <a href="img/Gallery_3/Eternal_Night.jpg"><img src="img/Gallery_3/Eternal_Night.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery_3/Nyx_croquis.jpg"><img src="img/Gallery_3/Nyx_croquis.jpg"></a>
+                        <a href="img/Gallery_3/Nyx_croquis.jpg"><img src="img/Gallery_3/Nyx_croquis.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery_3/Level concept.jpg"><img src="img/Gallery_3/Level concept.jpg"></a>
+                        <a href="img/Gallery_3/Level concept.jpg"><img src="img/Gallery_3/Level concept.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
                         <a href="img/Gallery_3/First_Nyx.jpg"><img src="img/Gallery_3/First_Nyx.jpg"></a>
-                </div>
-                <div class="w32 wm47 gallery1">
+                    </div>
+                    <div class="w32 wm47 gallery1">
                     <a href="img/Gallery_3/Nyx_fly.jpg"><img src="img/Gallery_3/Nyx_fly.jpg"></a>
-            </div>
-            <div class="w32 wm47 gallery1">
-                <a href="img/Gallery_3/Nyx_sleep.jpg"><img src="img/Gallery_3/Nyx_sleep.jpg"></a>
-        </div>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                        <a href="img/Gallery_3/Nyx_sleep.jpg"><img src="img/Gallery_3/Nyx_sleep.jpg"></a>
+                    </div>
                 </div>
             </div>
+        <!-- Lightbox / visualiseur plein écran -->
+        <div id="lightbox" class="hidden" aria-hidden="true">
+            <button class="lb-close" aria-label="Fermer">&times;</button>
+            <button class="lb-prev" aria-label="Précédent">&#10094;</button>
+            <div class="lb-content">
+                <img class="lb-image" src="" alt="">
+                <div class="lb-caption"></div>
+            </div>
+            <button class="lb-next" aria-label="Suivant">&#10095;</button>
         </div>
-    </body>
 
     <script src="js/app.js"></script>
+    </body>
 </html>
