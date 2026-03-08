@@ -3,36 +3,37 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Boo Haunt</title>
+        <title>Ori and the Blind Forest</title>
         <meta type="description" content="Voici mon portfolio" />
         <link rel="stylesheet" href="styles/styles.css" type="text/css">
     </head>
-    <body>
         <header>
             <div class="boxed">
                 <div class="flex aligncenter space-between">
                     <button onclick="openMenu()" class="header-menu-mobile">
                         <span class="material-icons">menu</span>
                     </button>
-                    <a href="img/website/Apopo_logo.png" class="header-logo">
+                    <a href="/" class="header-logo">
                         <img src="img/website/Apopo_logo.png">
                     </a>
                     <ul class="header-menu">
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#projet">Projet</a></li>
                         <li><a href="#galerie">Galerie</a></li>
-                        <li><a href="./index.html">Retour</a></li>
+                        <li><a href="./index.html#realisations">Retour</a></li>
                     </ul>
                 </div>
             </div>
         </header>
+    <body>
+
         <div id="accueil" class="slider">
-                <img src="img/Gallery__5/Boo_Haunt 3.jpg" class="slider-background">
+            <img src="img/Gallery_5/Ori_Nibel.jpg" class="slider-background">
                 <div class="slider-content">
-                    <h1>Boo Haunt</h1>
-                    <p>Restoration project</p>
+                    <h1>Ori and the Blind Forest</h1>
+                    <p>Fan art</p>
                 </div>
-            </div>
+        </div>
 
         <div id="projet" class="section">
             <div class="boxed">
@@ -41,7 +42,7 @@
                         <h2>Projet</h2> 
                     </div>
                     <div class="w60 wm100">
-                        <p>Ci-dessous un petit projet de restauration des concept arts du jeu-vidéo abandonné "Boo Haunt".</p>
+                        <p>Voici ci-dessous mes fan arts sur le jeu-vidéo Ori and the Blind Forest.</p>
                     </div>
                 </div>
             </div>
@@ -52,18 +53,36 @@
                 <h2>Galerie</h2>
                 <div class="flex wrap gap20 space-between">
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery__5/Boo_Haunt 1.jpg"><img src="img/Gallery__5/Boo_Haunt 1.jpg"></a>
+                        <a href="img/Gallery_5/Ori_Nibel.jpg"><img src="img/Gallery_5/Ori_Nibel.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery__5/Boo_Haunt 2.jpg"><img src="img/Gallery__5/Boo_Haunt 2.jpg"></a>
+                        <a href="img/Gallery_5/Ori_water.jpg"><img src="img/Gallery_5/Ori_water.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
-                            <a href="img/Gallery__5/Boo_Haunt 3.jpg"><img src="img/Gallery__5/Boo_Haunt 3.jpg"></a>
+                        <a href="img/Gallery_5/Ori_sketch.jpg"><img src="img/Gallery_5/Ori_sketch.jpg"></a>
                     </div>
                     <div class="w32 wm47 gallery1">
-                        <a href="img/Gallery__5/Boo_Haunt 4.jpg"><img src="img/Gallery__5/Boo_Haunt 4.jpg"></a>
+                        <a href="img/Gallery_5/Ori_fly.jpg"><img src="img/Gallery_5/Ori_fly.jpg"></a>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                        <a href="img/Gallery_5/Ori_Niwen.jpg"><img src="img/Gallery_5/Ori_Niwen.jpg"></a>
+                    </div>
+                    <div class="w32 wm47 gallery1">
+                        <a href="img/Gallery_5/Bird.jpg"><img src="img/Gallery_5/Bird.jpg"></a>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Lightbox / visualiseur plein écran -->
+        <div id="lightbox" class="hidden" aria-hidden="true">
+            <button class="lb-close" aria-label="Fermer">&times;</button>
+            <button class="lb-prev" aria-label="Précédent">&#10094;</button>
+            <div class="lb-content">
+                <img class="lb-image" src="" alt="">
+                <div class="lb-caption"></div>
+            </div>
+            <button class="lb-next" aria-label="Suivant">&#10095;</button>
         </div>
     </body>
 
