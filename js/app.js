@@ -1,13 +1,28 @@
 const openMenu = () => {
     const menu = document.querySelector(".header-menu");
     menu.classList.toggle("active");
-    if(menu.classList.contains["active"]){
-        document.querySelector("header .material-icons").innerHTML = "close"
+    const icon = document.querySelector("header .material-icons");
+    if(menu.classList.contains("active")){
+        icon.innerHTML = "close";
     }
     else{
-        document.querySelector("header .material-icons").innerHTML = "menu"
+        icon.innerHTML = "menu";
     }
 }
+
+// Fermer le menu quand on clique sur un lien
+document.addEventListener("DOMContentLoaded", function(){
+    const menuLinks = document.querySelectorAll(".header-menu a");
+    const menu = document.querySelector(".header-menu");
+    const menuButton = document.querySelector(".header-menu-mobile");
+    
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function(){
+            menu.classList.remove("active");
+            document.querySelector("header .material-icons").innerHTML = "menu";
+        });
+    });
+});
 
 /* Lightbox / visualiseur d'images */
 (function(){
